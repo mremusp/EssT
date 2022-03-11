@@ -1,0 +1,39 @@
+body {
+	margin: 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+}
+
+.dark {
+	background-color: #999;
+}
+
+.grid {
+	margin: 0;
+	padding: 1rem;
+	display: grid;
+	grid-template-columns: repeat(7, 6rem);
+	gap: 1rem;
+	list-style-type: none;
+	border-radius: 0.5rem;
+	transition: all 0.3s ease;
+}
+
+.grid-highlight {
+	background-color: #f9bcbc30;
+	border: 5px solid #f1c5c5;
+}
+
+.cell {
+	display: block;
+	width: 6rem;
+	height: 6rem;
+	background-color: hsl(0, 0%, 90%);
+	transition: all 0.3s ease;
+	box-sizing: border-box;
+}
+.cell-hover {
+	border: 3px solid #737373;
+}
